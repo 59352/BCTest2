@@ -48,6 +48,8 @@
   background: #c0c0c0;
   grid-row-gap: 1em;
   grid-column-gap: 1em;
+  -webkit-transition: 1s;
+  transition: 1s;
       grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 card9";
 }
 
