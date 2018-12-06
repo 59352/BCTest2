@@ -37,12 +37,18 @@
     width: 150px;
     height: 150px;
 }
+.container div {
+    border-radius: 5px;
+}
 
 .container {
     display: grid;
+    border-radius: 5px;
     grid-template-columns: 150px 150px 150px ;
-    grid-template-rows: 100x 100px;
+    grid-template-rows: 100x 1s0px 100px;
     background: #c0c0c0;
+    grid-row-gap: 1em;
+    grid-column-gap: 1em;
     grid-template-areas: "card1 card2 card3"
                          "card4 card5 card6"
                          "card7 card8 card9"
@@ -66,7 +72,7 @@
         
         
 
-   div {
+   .container div {
         
         border: 1px solid black;
 
