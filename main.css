@@ -1,5 +1,5 @@
 .card1 {
-  background: #262626;
+  background: red;
 }
 
 .card2 {
@@ -7,7 +7,7 @@
 }
 
 .card3 {
-  background: #262626;
+  background: lightblue;
 }
 
 .card4 {
@@ -41,8 +41,8 @@
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 250px 200px 150px;
-      grid-template-columns: 250px 200px 150px;
+  -ms-grid-columns: 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px;
   -ms-grid-rows: 150px 100px 150px;
       grid-template-rows: 150px 100px 150px;
   background: #c0c0c0;
@@ -57,43 +57,62 @@
   }
 }
 
-.container .container div {
+.container div {
+  border-radius: 5px;
   border: 1px solid black;
 }
 
-.container .container div:nth-child(1) {
-  grid-area: card-1;
+.container div:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
 }
 
-.container .container div:nth-child(2) {
-  grid-area: card-2;
+.container div:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
 }
 
-.container .container div:nth-child(3) {
-  grid-area: card-3;
+.container div:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: card3;
 }
 
-.container .container div:nth-child(4) {
-  grid-area: card-4;
+.container div:nth-child(4) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: card4;
 }
 
-.container .container div:nth-child(5) {
-  grid-area: card-5;
+.container div:nth-child(5) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: card5;
 }
 
-.container .container div:nth-child(6) {
-  grid-area: card-6;
+.container div:nth-child(6) {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: card6;
 }
 
-.container .container div:nth-child(7) {
-  grid-area: card-7;
+.container div:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: card7;
 }
 
-.container .container div:nth-child(8) {
-  grid-area: card-8;
+.container div:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: card8;
 }
 
-.container .container div:nth-child(9) {
-  grid-area: card-9;
+.container div:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: card9;
 }
 /*# sourceMappingURL=main.css.map */
