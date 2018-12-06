@@ -1,5 +1,7 @@
 .card1 {
   background: red;
+  -webkit-animation: animate 1s linear 1;
+          animation: animate 1s linear 1;
 }
 
 .card2 {
@@ -8,6 +10,8 @@
 
 .card3 {
   background: lightblue;
+  -webkit-animation: animate1 1s linear 1;
+          animation: animate1 1s linear 1;
 }
 
 .card4 {
@@ -56,6 +60,62 @@
 @media screen and (max-width: 600px) {
   .container {
         grid-template-areas: "card3 card2 card1" "card4 card5 card6" "card7 card8 card9";
+  }
+  @-webkit-keyframes animate {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(-210%, 0);
+              transform: translate(-210%, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @keyframes animate {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(-210%, 0);
+              transform: translate(-210%, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @-webkit-keyframes animate1 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(210%, 0);
+              transform: translate(210%, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+  }
+  @keyframes animate1 {
+    0% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
+    50% {
+      -webkit-transform: translate(210%, 0);
+              transform: translate(210%, 0);
+    }
+    100% {
+      -webkit-transform: translate(0, 0);
+              transform: translate(0, 0);
+    }
   }
 }
 

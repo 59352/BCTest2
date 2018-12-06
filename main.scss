@@ -2,7 +2,7 @@
 
 .card1 {
     background: red;
-    
+    animation: animate 1s linear 1;
 }
 .card2 {
     background: #262626;
@@ -10,7 +10,7 @@
 }
 .card3 {
     background: lightblue;
-    
+    animation: animate1 1s linear 1;
 }.card4 {
     background: #262626;
     
@@ -42,6 +42,7 @@
     grid-row-gap: 1em;
     grid-column-gap: 1em;
     transition: 1s;
+    
     grid-template-areas: "card1 card2 card3"
                          "card4 card5 card6"
                          "card7 card8 card9";
@@ -53,7 +54,28 @@
         grid-template-areas: "card3 card2 card1"
                              "card4 card5 card6"
                              "card7 card8 card9";
-                    
+            @keyframes animate {
+                0% {
+                    transform: translate(0, 0);
+                    }
+                50% {
+                    transform: translate(-210%, 0);
+                }
+                100% {
+                    transform: translate(0, 0);
+                }
+            } 
+            @keyframes animate1 {
+                0% {
+                    transform: translate(0, 0);
+                    }
+                50% {
+                    transform: translate(210%, 0);
+                }
+                100% {
+                    transform: translate(0, 0);
+                }
+            }   
                                              
         }
         
