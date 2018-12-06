@@ -1,0 +1,111 @@
+.card1 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card2 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card3 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card4 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card5 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card6 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card7 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card8 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.card9 {
+  background: #262626;
+  width: 150px;
+  height: 150px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 150px 150px 150px;
+      grid-template-columns: 150px 150px 150px;
+  -ms-grid-rows: 100x 100px;
+      grid-template-rows: 100x 100px;
+  background: #c0c0c0;
+      grid-template-areas: "card1 card2 card3" "card4 card5 card6" "card7 card8 card9";
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+        grid-template-areas: "card-1 . ."  "card-2 . ." "card-3 . ." "card-4 . ." "card-5 . ." "card-6 . ." "card-7 . ." "card-8 . ." "card-9 . .";
+  }
+}
+
+.container div {
+  border: 1px solid black;
+}
+
+.container div:nth-child(1) {
+  grid-area: card-1;
+}
+
+.container div:nth-child(2) {
+  grid-area: card-2;
+}
+
+.container div:nth-child(3) {
+  grid-area: card-3;
+}
+
+.container div:nth-child(4) {
+  grid-area: card-4;
+}
+
+.container div:nth-child(5) {
+  grid-area: card-5;
+}
+
+.container div:nth-child(6) {
+  grid-area: card-6;
+}
+
+.container div:nth-child(7) {
+  grid-area: card-7;
+}
+
+.container div:nth-child(8) {
+  grid-area: card-8;
+}
+
+.container div:nth-child(9) {
+  grid-area: card-9;
+}
+/*# sourceMappingURL=main.css.map */
