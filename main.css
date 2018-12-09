@@ -1,7 +1,6 @@
 .card1 {
   background: red;
-  -webkit-animation: animate 1s linear 1;
-          animation: animate 1s linear 1;
+  animation: animate 1s linear 1 alternate-reverse;
 }
 
 .card2 {
@@ -10,8 +9,7 @@
 
 .card3 {
   background: lightblue;
-  -webkit-animation: animate1 1s linear 1;
-          animation: animate1 1s linear 1;
+  animation: animate1 1s linear 1 alternate-reverse;
 }
 
 .card4 {
@@ -66,13 +64,9 @@
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
     }
-    50% {
-      -webkit-transform: translate(-210%, 0);
-              transform: translate(-210%, 0);
-    }
     100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      -webkit-transform: translate(-350px, 0);
+              transform: translate(-350px, 0);
     }
   }
   @keyframes animate {
@@ -80,13 +74,9 @@
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
     }
-    50% {
-      -webkit-transform: translate(-210%, 0);
-              transform: translate(-210%, 0);
-    }
     100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      -webkit-transform: translate(-350px, 0);
+              transform: translate(-350px, 0);
     }
   }
   @-webkit-keyframes animate1 {
@@ -94,13 +84,9 @@
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
     }
-    50% {
-      -webkit-transform: translate(210%, 0);
-              transform: translate(210%, 0);
-    }
     100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      -webkit-transform: translate(350px, 0);
+              transform: translate(350px, 0);
     }
   }
   @keyframes animate1 {
@@ -108,13 +94,9 @@
       -webkit-transform: translate(0, 0);
               transform: translate(0, 0);
     }
-    50% {
-      -webkit-transform: translate(210%, 0);
-              transform: translate(210%, 0);
-    }
     100% {
-      -webkit-transform: translate(0, 0);
-              transform: translate(0, 0);
+      -webkit-transform: translate(350px, 0);
+              transform: translate(350px, 0);
     }
   }
 }
